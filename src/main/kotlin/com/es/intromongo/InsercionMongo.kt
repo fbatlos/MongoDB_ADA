@@ -9,14 +9,14 @@ fun main() {
 
     // Configuramos la uri del cluster
     val mongoClient: MongoClient = MongoClients.create(connectString)
-    val databaseName = "dbada"
+    val databaseName = "adaprueba"
 
     try {
         // Obtener la base de datos
         val database = mongoClient.getDatabase(databaseName)
 
         // Obtener la colección
-        val coll = database.getCollection("collholamundo")
+        val coll = database.getCollection("documentoholamundo")
 
         // Creamos el documento que queramos insertar
         val nuevoDocumento: Document = Document().append("saludo", "Ciao")

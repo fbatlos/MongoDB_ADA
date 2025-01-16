@@ -10,17 +10,21 @@ fun main() {
 
     // Configuramos la uri del cluster
     val mongoClient: MongoClient = MongoClients.create(connectString)
-    val databaseName = "dbada"
+    val databaseName = "adaprueba"
 
     // Obtener la base de datos
     val database = mongoClient.getDatabase(databaseName)
 
     // Obtener la colección
-    val collection = database.getCollection("collholamundo")
+    val collection = database.getCollection("documentoholamundo")
 
     val filter = Filters.eq("nombre", "Juan")
     // Busca documentos donde el campo "nombre" sea igual a "Juan"
     collection.find(filter).forEach { println(it) }
+
+
+    /*
+    TODO Mirar esto
 
     val filter2 = Filters.gt("edad", 25)
     // Busca documentos donde el campo "edad" sea mayor a 25
@@ -44,6 +48,6 @@ fun main() {
 
 
 
-
+*/
 
 }
