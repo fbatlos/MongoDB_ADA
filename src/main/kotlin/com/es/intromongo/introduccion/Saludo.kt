@@ -1,4 +1,4 @@
-package com.es.intromongo
+package com.es.intromongo.introduccion
 
 data class Saludo(val frase: String) {
 }

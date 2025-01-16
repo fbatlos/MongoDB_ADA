@@ -1,4 +1,4 @@
-package com.es.intromongo
+package com.es.intromongo.introduccion
 
 import com.mongodb.client.MongoClient
 import com.mongodb.client.MongoClients

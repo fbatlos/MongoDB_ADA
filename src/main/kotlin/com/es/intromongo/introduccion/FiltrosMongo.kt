@@ -16,15 +16,11 @@ fun main() {
     val database = mongoClient.getDatabase(databaseName)
 
     // Obtener la colección
-    val collection = database.getCollection("documentoholamundo")
+    val collection = database.getCollection("collviajes")
 
     val filter = Filters.eq("nombre", "Juan")
     // Busca documentos donde el campo "nombre" sea igual a "Juan"
     collection.find(filter).forEach { println(it) }
-
-
-    /*
-    TODO Mirar esto
 
     val filter2 = Filters.gt("edad", 25)
     // Busca documentos donde el campo "edad" sea mayor a 25
@@ -45,9 +41,5 @@ fun main() {
     val filter6 = Filters.regex("nombre", "^Ju.*")
     // Busca documentos donde "nombre" empiece con "Ju"
     collection.find(filter6).forEach { println(it) }
-
-
-
-*/
 
 }
