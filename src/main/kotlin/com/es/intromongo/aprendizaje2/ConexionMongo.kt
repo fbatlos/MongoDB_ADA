@@ -1,15 +1,11 @@
-package com.es.intromongo.act_juegos
+package com.es.intromongo.aprendizaje2
 
 import com.mongodb.client.MongoClient
 import com.mongodb.client.MongoClients
 import com.mongodb.client.MongoDatabase
 import io.github.cdimascio.dotenv.dotenv
 
-fun main() {
-
-}
-
-object ConexionBD {
+object ConexionMongo {
 
     private val mongoClient: MongoClient by lazy {
         val dotenv = dotenv()
